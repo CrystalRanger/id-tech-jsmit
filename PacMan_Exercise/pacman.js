@@ -41,10 +41,10 @@ function checkPageBounds(direction, imgWidth, pos, pageWidth) {
   //
   // TODO: Complete this to reverse direction upon hitting screen edge
   //
-  if (direction == 1) {
-    direction = (pos > 0) ? 1 : 0;
-  } else {
-    direction = (pos < pageWidth - imgWidth) ? 0 : 1;
+  if (direction == 1 && (pos > 0)) {
+    direction = 0;
+  } else if (direction == 0 && pos < pageWidth - imgWidth){
+    direction = 1;
   }
   
   return direction;
