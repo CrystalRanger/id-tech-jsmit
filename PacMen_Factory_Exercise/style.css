@@ -1,0 +1,19 @@
+.dot {
+    position: absolute;
+    z-index: -1;
+    border: 5px solid #fcc;
+    border-radius: 50%;
+}
+
+body {
+    background-color: black;
+}
+
+button {
+    position: relative;
+    z-index: 999;
+}
+
+img {
+    z-index: 0 !important;
+}
